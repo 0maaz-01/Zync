@@ -7,7 +7,7 @@ import { getStreamToken } from "../lib/api";
 import {
   Channel,
   ChannelHeader,
-  Chat,
+  Chat, 
   MessageInput,
   MessageList,
   Thread,
