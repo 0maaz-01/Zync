@@ -8,7 +8,7 @@ const SignUpPage = () => {
   const [signupData, setSignupData] = useState({
     fullName: "",
     email: "",
-    password: "",
+    password: "", 
   });
 
   // This is how we did it using our custom hook - optimized version
