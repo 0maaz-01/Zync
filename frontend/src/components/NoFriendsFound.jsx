@@ -7,6 +7,6 @@ const NoFriendsFound = () => {
       </p>
     </div>
   );
-};
+}; 
 
 export default NoFriendsFound;
