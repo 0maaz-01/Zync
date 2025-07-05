@@ -1,4 +1,3 @@
-
 import { VideoIcon } from "lucide-react";
 
 function CallButton({ handleVideoCall }) {
@@ -10,5 +9,5 @@ function CallButton({ handleVideoCall }) {
     </div>
   );
 }
- 
+
 export default CallButton;

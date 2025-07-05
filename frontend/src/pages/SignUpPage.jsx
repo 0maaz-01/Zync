@@ -8,8 +8,19 @@ const SignUpPage = () => {
   const [signupData, setSignupData] = useState({
     fullName: "",
     email: "",
-    password: "", 
+    password: "",
   });
+
+  // This is how we did it at first, without using our custom hook
+  // const queryClient = useQueryClient();
+  // const {
+  //   mutate: signupMutation,
+  //   isPending,
+  //   error,
+  // } = useMutation({
+  //   mutationFn: signup,
+  //   onSuccess: () => queryClient.invalidateQueries({ queryKey: ["authUser"] }),
+  // });
 
   // This is how we did it using our custom hook - optimized version
   const { isPending, error, signupMutation } = useSignUp();
@@ -31,7 +42,7 @@ const SignUpPage = () => {
           <div className="mb-4 flex items-center justify-start gap-2">
             <ShipWheelIcon className="size-9 text-primary" />
             <span className="text-3xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider">
-              Streamify
+                Zync
             </span>
           </div>
 
