@@ -111,22 +111,33 @@ This platform allows users to:
 
 To run the project locally, follow these steps:
 
-```bash
-# Backend setup
-npm install express mongoose jsonwebtoken
+1. Fork this repository.
 
-# Frontend setup
-npm install react react-dom zustand tailwindcss@3 postcss autoprefixer stream-chat-react
+2. Open the **frontend** and **backend** folders in separate terminals, and run the `npm install` command in both.
 
-# Optional packages
-npm install react-hot-toast react-router-dom
-```
+3. Set up `.env` files in both the frontend and backend folders.
 
-Tailwind Initialization:
+   **a) Frontend `.env` file:**
 
-```bash
-npx tailwindcss init -p
-```
+   ```
+   VITE_STEAM_API_KEY=your_steam_api_key
+   ```
+
+   **b) Backend `.env` file:**
+
+   ```
+   PORT=5001  
+   MONGO_URI=your_mongodb_url
+
+   STEAM_API_KEY=your_steam_api_key  
+   STEAM_API_SECRET=your_secret_steam_api_key
+
+   JWT_SECRET_KEY=your_jwt_secret_key  
+   NODE_ENV=development
+   ```
+
+4. Run `npm run dev` in both frontend and backend terminal windows.
+5. Open http://localhost:5173/
 
 ---
 
