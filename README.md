@@ -97,10 +97,12 @@ This platform allows users to:
   
 ### 📱 Mobile View
 
-[<img src="https://github.com/0maaz-01/Netflix-Clone/blob/main/Netflix%20Pages/Mobile2.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Netflix-Clone/blob/main/Netflix%20Pages/Mobile3.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Netflix-Clone/blob/main/Netflix%20Pages/Mobile4.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Netflix-Clone/blob/main/Netflix%20Pages/Mobile5.jpg" alt="Thumbnail" width="220" height="500">]
+[<img src="https://github.com/0maaz-01/Zync/blob/main/Images/HomePageM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/NotificationsM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/HomePageM2.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/LoginM.jpg" alt="Thumbnail" width="220" height="500">]
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/SignupM.jpg" alt="Thumbnail" width="220" height="500">]
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/MessageM.jpg" alt="Thumbnail" width="220" height="500">]
 
 ---
 
