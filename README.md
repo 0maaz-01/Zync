@@ -39,11 +39,6 @@ This platform allows users to:
 * Secure login and signup functionality
 * JWT-based protected routes
 
-### 🏠 Dashboard
-
-* View your connections and discover other learners
-* See who’s online, initiate chats or calls easily
-
 ---
 
 ## 📄 Pages Overview
