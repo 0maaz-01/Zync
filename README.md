@@ -1,135 +1,137 @@
 # Zync
 
-A full-stack real-time language learning platform that helps users connect with fellow learners. Built using the MERN stack along with Stream Chat and Zustand for advanced messaging and state management.
+A **full-stack real-time language learning platform** that helps users connect with fellow learners. Built using the MERN stack along with Stream Chat and Zustand for advanced messaging, video calling and state management.
 
-This platform allows users to chat with other users who are learning the same language, place one-on-one or group video calls with screen sharing, send and receive friend requests, get real-time notifications, and enjoy a smooth authentication flow and responsive user interface.
+This platform allows users to:
+
+* **Chat** with other users who are learning the same language
+* **Place one-on-one or group video calls** with screen sharing
+* **Send and receive friend requests**
+* **Get real-time notifications**
+* Enjoy a smooth **authentication flow** and responsive user interface
 
 ---
 
 ## 🌟 Features & Highlights
 
-Social Learning
-Connect with people learning the same language. Browse all users and current friends from the homepage.
+### 👥 Social Learning
 
-Real-Time Chat
-One-to-one messaging using Stream Chat. Message persistence and delivery tracking.
+* Connect with people learning the same language
+* Browse all users and current friends from the homepage
 
-Group Video Calls
-Join or start group video calls. Screen sharing supported.
+### 💬 Real-Time Chat
 
-Notifications
-Get notified instantly on new friend requests. Accept or reject friend requests within the app.
+* One-to-one messaging using **Stream Chat**
+* Message persistence and delivery tracking
 
-Authentication
-Secure login and signup functionality with JWT-based protected routes.
+### 🎥 Group Video Calls
 
-Dashboard
-View your connections and discover other learners. See who’s online and initiate chats or calls easily.
+* Join or start group video calls
+* **Screen sharing** supported
+
+### 🔔 Notifications
+
+* Get notified instantly on new friend requests
+* Accept or reject friend requests within the app
+
+### 🔐 Authentication
+
+* Secure login and signup functionality
+* JWT-based protected routes
+
+### 🏠 Dashboard
+
+* View your connections and discover other learners
+* See who’s online, initiate chats or calls easily
 
 ---
 
 ## 📄 Pages Overview
 
-Login / Signup Pages
-Authentication pages with form validation, password encryption, and session management.
+1. **Login / Signup Pages** 🔑
+   Auth pages with form validation, password encryption, and session management.
 
-Home Page
-Displays a list of current friends and all users on the platform.
+2. **Home Page** 🏠
+   Display a list of current friends and all users on the platform.
 
-Notification Center
-Manages friend request notifications and interactions such as accept or deny.
+3. **Notification Center** 🔔
+   Friend request notifications and interactions (accept/deny).
 
-Chat Page
-Real-time messaging experience using Stream Chat integration.
+4. **Chat Page** 💬
+   Real-time messaging experience using Stream Chat integration.
 
-Video Call Page
-One-on-one and group video conferencing with screen sharing.
+5. **Video Call Page** 📹
+   One-on-one and group video conferencing with screen sharing.
 
 ---
 
 ## 🛠 Technologies Used
 
-MongoDB
-Used as the NoSQL database to store user data and connections.
-
-Mongoose
-ODM for modeling and managing MongoDB data.
-
-Express.js
-Backend web framework used for building RESTful APIs.
-
-React.js
-Frontend library used for building dynamic user interfaces.
-
-Tailwind CSS
-Utility-first CSS framework for rapid UI development.
-
-CSS / HTML
-Used for layout, structure, and basic styles.
-
-Zustand
-Minimal state management library for managing frontend state.
-
-Stream Chat
-Service used for implementing real-time messaging.
-
-JWT
-Used for secure user authentication and route protection.
-
-Socket.io (if used)
-Supports real-time communication features like video call signaling.
+| Tech Stack       | Purpose / Usage                                      |
+| ---------------- | ---------------------------------------------------- |
+| **MongoDB**      | Database for storing user data and connections       |
+| **Mongoose**     | ODM for MongoDB                                      |
+| **Express.js**   | Backend API & routes                                 |
+| **React.js**     | Frontend UI framework                                |
+| **Tailwind CSS** | Responsive styling                                   |
+| **CSS / HTML**   | Structure and base styling                           |
+| **Zustand**      | Lightweight state management                         |
+| **Stream Chat**  | Real-time messaging service                          |
+| **JWT**          | Authentication                                       |
+| **Socket.io**    | (Optional if used) Real-time communication for calls |
 
 ---
 
 ## 📸 Screenshots & Demo
 
-Desktop View
+💻 **Desktop View**
 \[Thumbnail Thumbnail Thumbnail]
 
-Mobile View
+📱 **Mobile View**
 \[Thumbnail Thumbnail Thumbnail]
 
-Live Link: LanguageLink - Real-Time Language Learning Platform
+🔗 **Live Link**: [LanguageLink - Real-Time Language Learning Platform](#)
 
 ---
 
 ## 🚀 Installation Guide
 
-To run the project locally, install the necessary packages for both backend and frontend.
+To run the project locally, follow these steps:
 
-Backend Setup
-Run the following command to install dependencies:
-`npm install express mongoose jsonwebtoken`
+```bash
+# Backend setup
+npm install express mongoose jsonwebtoken
 
-Frontend Setup
-Run the following command to install dependencies:
-`npm install react react-dom zustand tailwindcss@3 postcss autoprefixer stream-chat-react`
+# Frontend setup
+npm install react react-dom zustand tailwindcss@3 postcss autoprefixer stream-chat-react
 
-Optional Packages
-Install these if needed:
-`npm install react-hot-toast react-router-dom`
+# Optional packages
+npm install react-hot-toast react-router-dom
+```
 
-Tailwind Initialization
-Run the following command:
-`npx tailwindcss init -p`
+Tailwind Initialization:
+
+```bash
+npx tailwindcss init -p
+```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are always welcome. To contribute:
+Want to improve this project? Contributions are always welcome!
 
-Fork the repository
-Create a new branch
-Make your changes
-Push to your fork
-Submit a pull request
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Push to your fork
+5. Submit a Pull Request
 
 ---
 
 ## 📄 License
 
-MIT License
+**MIT License**
 
 ```
 MIT License
@@ -142,4 +144,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ---
 
-Let me know if you’d like this exported as a Markdown file or need it tailored for deployment documentation or a GitHub project.
+Let me know if you'd like help generating visuals or if you want the markdown file exported.
