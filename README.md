@@ -77,9 +77,10 @@ This platform allows users to:
 | **Tailwind CSS** | Responsive styling                                   |
 | **CSS / HTML**   | Structure and base styling                           |
 | **Zustand**      | Lightweight state management                         |
-| **Stream Chat**  | Real-time messaging service                          |
+| **Stream Chat**  | Real-time messaging & video calling service                          |
 | **JWT**          | Authentication                                       |
-| **Socket.io**    | (Optional if used) Real-time communication for calls |
+| **Socket.io**    | Real-time communication for calls |
+| **Node JS**        | For setting up the backend                    |
 
 ---
 
