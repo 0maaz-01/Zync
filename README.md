@@ -87,11 +87,11 @@ This platform allows users to:
 
 ### 💻 Desktop View
 
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/HomePage.jpg" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/Signin.jpg" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/Signin.jpg" alt="Thumbnail" width="320" height="180">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/HomePage.jpg" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/Notifications.jpg" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/Signin.jpg" alt="Thumbnail" width="320" height="180">
 
  <br></br>
 
-<img src="https://github.com/0maaz-01/Netflix-Clone/blob/main/Netflix%20Pages/MovieDetailPage.png" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Netflix-Clone/blob/main/Netflix%20Pages/SearchHistory.page.png" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Netflix-Clone/blob/main/Netflix%20Pages/SearchPage.png" alt="Thumbnail" width="320" height="180">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/Chat.jpg" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/Signin.jpg" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/Message.jpg" alt="Thumbnail" width="320" height="180">
 
  <br></br>
   
