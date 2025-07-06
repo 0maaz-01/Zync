@@ -1,4 +1,4 @@
-# Zync
+# Zync 
 
 A **full-stack real-time language learning platform** that helps users connect with fellow learners. Built using the MERN stack along with Stream Chat and Zustand for advanced messaging, video calling and state management.
 
