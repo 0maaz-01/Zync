@@ -1,8 +1,14 @@
+
+
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useAuthUser from "../hooks/useAuthUser";
 import { useQuery } from "@tanstack/react-query";
 import { getStreamToken } from "../lib/api";
+import CustomMessageList from "../components/CustomMessageList";
+import CustomChannelHeader from '../components/CustomChannelHeader';
+
+
 
 import {
   Channel,
@@ -94,22 +100,43 @@ const ChatPage = () => {
 
   if (loading || !chatClient || !channel) return <ChatLoader />;
 
+
   return (
-    <div className="h-[93vh]">
-      <Chat client={chatClient}>
-        <Channel channel={channel}>
-          <div className="w-full relative">
-            <CallButton handleVideoCall={handleVideoCall} />
-            <Window>
-              <ChannelHeader />
-              <MessageList />
-              <MessageInput focus />
-            </Window>
-          </div>
-          <Thread />
-        </Channel>
-      </Chat>
+
+    <div className=" flex items-center justify-center p-4">
+      <div className="w-full h-full rounded-2xl overflow-hidden shadow-lg ">
+        <Chat client={chatClient} theme="messaging dark">
+          <Channel channel={channel}>
+            <div className="relative w-full h-full bg-[#111111]">
+              <div className="absolute top-4 right-4 z-10 w-12">
+                <CallButton handleVideoCall={handleVideoCall} />
+              </div>
+
+              <Window>
+                <div className="flex flex-col h-full bg-[#2a2929] text-white">
+                  <div className="p-4 border-b border-gray-800">
+                    <CustomChannelHeader />
+                  </div>
+
+                  <div className="flex-1 overflow-y-auto">
+                    <MessageList/>
+                  </div>
+
+                  <div className="p-4 pt-2 pb-2 bg-[#2a2929] border-t border-white/10">
+                    <MessageInput />
+                  </div>
+                </div>
+              </Window>
+
+            </div>
+
+            <Thread />
+          </Channel>
+        </Chat>
+      </div>
     </div>
+
   );
 };
+
 export default ChatPage;

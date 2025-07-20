@@ -76,7 +76,7 @@ const CallPage = () => {
   if (isLoading || isConnecting) return <PageLoader />;
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
+    <div className="h-screen text-white bg-[#110e0e] flex flex-col items-center justify-center">
       <div className="relative">
         {client && call ? (
           <StreamVideo client={client}>
