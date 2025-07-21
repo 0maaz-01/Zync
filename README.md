@@ -1,5 +1,5 @@
 # Zync 
-
+ 
 A **full-stack real-time video calling and chat web app** that helps users connect with people. Built using the MERN stack along with Stream Chat and Zustand for advanced messaging, video calling and state management.
 
 This platform allows users to:
