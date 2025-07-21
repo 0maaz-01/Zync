@@ -5,14 +5,12 @@ import { useParams } from "react-router";
 import useAuthUser from "../hooks/useAuthUser";
 import { useQuery } from "@tanstack/react-query";
 import { getStreamToken } from "../lib/api";
-import CustomMessageList from "../components/CustomMessageList";
 import CustomChannelHeader from '../components/CustomChannelHeader';
 
 
 
 import {
   Channel,
-  ChannelHeader,
   Chat,
   MessageInput,
   MessageList,

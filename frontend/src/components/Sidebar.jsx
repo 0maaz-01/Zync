@@ -9,7 +9,7 @@ const Sidebar = () => {
   const currentPath = location.pathname;
 
   return (
-    <aside className="playfair-font 2xl:max-h-[1000px] w-64 bg-black border-r border-white/40 hidden lg:flex flex-col h-screen sticky top-0">
+    <aside className="playfair-font 2xl:max-h-[1000px] w-64 bg-black border-r border-white/40 hidden lg:flex flex-col h-screen sticky  top-0">
       <div className="p-5 border-b border-gray-800">
         <Link to="/" className="flex items-center gap-2.5 group">
           <Navigation className="w-12 h-12 text-amber-600 tracking-wider animate-pulse" />

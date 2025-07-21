@@ -12,18 +12,6 @@ const SignUpPage = () => {
     password: "",
   });
 
-  // This is how we did it at first, without using our custom hook
-  // const queryClient = useQueryClient();
-  // const {
-  //   mutate: signupMutation,
-  //   isPending,
-  //   error,
-  // } = useMutation({
-  //   mutationFn: signup,
-  //   onSuccess: () => queryClient.invalidateQueries({ queryKey: ["authUser"] }),
-  // });
-
-  // This is how we did it using our custom hook - optimized version
   const { isPending, error, signupMutation } = useSignUp();
 
   const handleSignup = (e) => {
@@ -44,9 +32,9 @@ const SignUpPage = () => {
         
         
         
-      <div className="flex items-center justify-center lg:w-1/2">
+      <div className="flex items-center justify-center lg:w-1/2 ">
         {/* SIGNUP FORM - RIGHT SIDE */}
-        <div className=" flex items-center mt-[70px]  lg:mt-[0px]   mb-[100px] justify-center lg:w-full border rounded-2xl sm:min-h-[700px]  max-w-[520px] sm:max-w-[600px] lg:rounded-none border-white/15 lg:border-0   lg:flex w-full  bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900  relative overflow-hidden">
+        <div className=" flex items-center mt-[70px] sm:min-h-[600px] lg:h-full  lg:mt-[0px]   mb-[100px] lg:mb-0 justify-center lg:w-full border rounded-2xl  max-w-[520px] sm:max-w-[600px] lg:rounded-none border-white/15 lg:border-0   lg:flex w-full  bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900  relative overflow-hidden">
           {/* Animated background elements */}
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/20 to-pink-900/20"></div>
 
@@ -82,7 +70,7 @@ const SignUpPage = () => {
         
         {/* SIGNUP FORM - LEFT SIDE */}
       <div className="flex items-center justify-center lg:w-1/2">
-        <div className="rounded-2xl    sm:min-h-[600px] mb-[100px]  max-w-[520px] sm:max-w-[600px]   lg:rounded-none w-full lg:w-full p-6 sm:p-10 flex flex-col relative  border border-white/15 lg:border-0">
+        <div className="rounded-2xl lg:h-full   mb-[100px] lg:mb-0 max-w-[520px] sm:max-w-[600px]   lg:rounded-none w-full lg:w-full p-6 sm:p-10 flex flex-col relative  border border-white/15 lg:border-0">
           {/* LOGO */}
           <Zync/>
 
@@ -187,7 +175,7 @@ const SignUpPage = () => {
                     {isPending ? (
                       <>
                         <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                        <span className="animate-pulse">Creating Account...</span>
+                        
                       </>
                     ) : (
                       <>

@@ -15,12 +15,11 @@ const FriendCard = ({ friend }) => {
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Online indicator */}
-            <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-black"></div>
+
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="font-semibold text-white truncate text-lg">{friend.fullName}</h3>
-            <p className="text-gray-400 text-sm">Online</p>
+            <p className="text-gray-400 text-sm">{friend.location}</p>
           </div>
         </div>
 

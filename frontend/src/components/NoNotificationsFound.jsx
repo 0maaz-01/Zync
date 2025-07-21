@@ -2,7 +2,7 @@ import { BellIcon } from "lucide-react";
 
 function NoNotificationsFound() {
   return (
-    <div className=" backdrop-blur-3xl rounded-t-2xl  border border-amber-600 shadow-lg shadow-yellow-600  flex flex-col items-center justify-center py-16 text-center  text-white">
+    <div className=" backdrop-blur-3xl rounded-t-2xl   flex flex-col items-center justify-center py-16 text-center  text-white">
       <div className="size-16 rounded-full bg-base-300 flex items-center justify-center mb-4">
         <BellIcon className="size-8 text-base-content" />
       </div>

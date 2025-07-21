@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router";
 import useAuthUser from "../hooks/useAuthUser";
-import { BellIcon, LogOutIcon, Navigation, ShipWheelIcon } from "lucide-react";
+import { BellIcon, LogOutIcon, Navigation } from "lucide-react";
 
 import useLogout from "../hooks/useLogout";
 
@@ -8,22 +8,29 @@ const Navbar = () => {
   const { authUser } = useAuthUser();
   const location = useLocation();
   const isChatPage = location.pathname?.startsWith("/chat");
-
-  // const queryClient = useQueryClient();
-  // const { mutate: logoutMutation } = useMutation({
-  //   mutationFn: logout,
-  //   onSuccess: () => queryClient.invalidateQueries({ queryKey: ["authUser"] }),
-  // });
+  const isNotificationPage = location.pathname?.endsWith("/notifications");
+  const isHomePage = location.pathname?.endsWith("/");
 
   const { logoutMutation } = useLogout();
 
   return (
-<nav className="playfair-font  bg-black border-b border-white/40  sticky top-0 z-30 h-16 flex items-center shadow-sm backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+    <nav className="playfair-font  bg-black border-b border-white/40  sticky top-0 z-30 h-16 flex items-center shadow-sm backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-end w-full">
           {/* LOGO - ONLY IN THE CHAT PAGE */}
           {isChatPage && (
               <div className="p-4 pl-0">
+                <Link to="/" className="flex items-center gap-2.5 group">
+                  <Navigation className="w-10 h-10 text-amber-600 tracking-wider animate-pulse" />
+                  <span className="text-4xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-500 tracking-wider animate-pulse">
+                      Zync
+                  </span>
+                </Link>
+              </div>
+          )}
+
+          {(isNotificationPage || isHomePage) && (
+              <div className="p-4 pl-0 lg:hidden">
                 <Link to="/" className="flex items-center gap-2.5 group">
                   <Navigation className="w-10 h-10 text-amber-600 tracking-wider animate-pulse" />
                   <span className="text-4xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-500 tracking-wider animate-pulse">
