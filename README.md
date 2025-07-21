@@ -1,5 +1,83 @@
 # Zync 
 
+A **full-stack real-time video calling and chat web app** that helps users connect with people. Built using the MERN stack along with Stream Chat and Zustand for advanced messaging, video calling and state management.
+
+This platform allows users to:
+
+* **Chat** with other users.
+* **Place one-on-one or group video calls** with screen sharing.
+* **Send and receive friend requests**
+* **Get real-time notifications**
+* Enjoy a smooth **authentication flow** and responsive user interface
+
+---
+
+## 🌟 Features & Highlights
+
+### 💬 Real-Time Chat
+
+* One-to-one messaging using **Stream Chat**
+* Message persistence and delivery tracking
+
+### 🎥 Group Video Calls
+
+* Join or start one on one / group video calls
+* **Screen sharing** supported
+
+### 🔔 Notifications
+
+* Get notified instantly on new friend requests
+* Accept or reject friend requests within the app
+
+### 🔐 Authentication
+
+* Secure login and signup functionality
+* JWT-based protected routes
+
+---
+
+## 📄 Pages Overview
+
+1. **Login / Signup Pages** 🔑
+   Auth pages with form validation, password encryption, and session management.
+
+2. **Home Page** 🏠
+   Display a list of current friends and all users on the platform.
+
+3. **Notification Center** 🔔
+   Friend request notifications and interactions (accept/deny).
+
+4. **Chat Page** 💬
+   Real-time messaging experience using Stream Chat integration.
+
+5. **Video Call Page** 📹
+   One-on-one and group video conferencing with screen sharing.
+
+---
+
+## Screenshots & Demo 📸
+
+### 💻 Desktop View
+
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/E.png" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/D.png" alt="Thumbnail" width="320" height="180">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/A.jpg" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/B.jpg" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/C.jpg" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/G.png" alt="Thumbnail" width="320" height="180">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/J.png" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/F.png" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/I.png" alt="Thumbnail" width="320" height="180">
+
+  
+### 📱 Mobile View
+
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/AM.jpg" alt="Thumbnail" width="220" height="500"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/BM.jpg" alt="Thumbnail" width="220" height="500"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/CM.jpg" alt="Thumbnail" width="220" height="500"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/DM.jpg" alt="Thumbnail" width="220" height="500"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/EM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/FM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/GM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/HM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/JM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/KM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/IM.jpg" alt="Thumbnail" width="220" height="500">
+<img src="https://github.com/0maaz-01/Zync/blob/main/Images/LM.jpg" alt="Thumbnail" width="220" height="500">
+
+
+---
+
 ## 🛠 Technologies Used
 ![My Skills](https://skillicons.dev/icons?i=mongodb,express,react,nodejs,js,html,css,tailwind)
 
@@ -16,28 +94,6 @@
 | **JWT**          | Authentication                                       |
 | **Socket.io**    | Real-time communication for calls |
 | **Node JS**        | For setting up the backend                    |
-
----
-
-## Screenshots & Demo 📸
-
-### 💻 Desktop View
-
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/E.png" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/D.png" alt="Thumbnail" width="320" height="180">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/A.jpg" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/B.jpg" alt="Thumbnail" width="320" height="180"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/C.jpg" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/G.png" alt="Thumbnail" width="320" height="180">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/F.png" alt="Thumbnail" width="320" height="180"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/I.png" alt="Thumbnail" width="320" height="180">
-  
-### 📱 Mobile View
-
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/AM.jpg" alt="Thumbnail" width="220" height="500"> <img src="https://github.com/0maaz-01/Zync/blob/main/Images/BM.jpg" alt="Thumbnail" width="220" height="500"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/CM.jpg" alt="Thumbnail" width="220" height="500"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/DM.jpg" alt="Thumbnail" width="220" height="500"><img src="https://github.com/0maaz-01/Zync/blob/main/Images/EM.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/FM.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/GM.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/HM.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/JM.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/KM.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/IM.jpg" alt="Thumbnail" width="220" height="500">
-<img src="https://github.com/0maaz-01/Zync/blob/main/Images/LM.jpg" alt="Thumbnail" width="220" height="500">
-
 
 ---
 
