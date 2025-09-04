@@ -50,7 +50,7 @@ const OnboardingPage = () => {
   
   return (
     <div className="playfair-font min-h-screen bg-black flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Animated background elements - matching login page */}
+
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-400/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -63,10 +63,9 @@ const OnboardingPage = () => {
         
         <div className="relative p-6 sm:p-8 lg:p-10">
           <div className="text-center mb-10">
-            <h1 className="text-3xl pb-1 sm:text-5xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent mb-3">
+            <h1 className="text-3xl  -mt-4 pb-1 sm:text-5xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent mb-3">
               Complete Your Profile
             </h1>
-            <p className="text-white/60 text-lg">Let's set up your language learning journey</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8">
