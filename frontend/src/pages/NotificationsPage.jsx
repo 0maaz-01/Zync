@@ -65,10 +65,7 @@ const NotificationsPage = () => {
                               <h3 className="font-semibold text-white">{request.sender.fullName}</h3>
                               <div className="flex flex-wrap gap-1.5 mt-1">
                                 <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-600 text-white">
-                                  Native: {request.sender.nativeLanguage}
-                                </span>
-                                <span className="px-2 py-1 rounded-full text-xs font-medium border border-gray-600 text-gray-300">
-                                  Learning: {request.sender.learningLanguage}
+                                  {request.sender.location}
                                 </span>
                               </div>
                             </div>
