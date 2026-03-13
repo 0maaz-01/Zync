@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useAuthUser from "../hooks/useAuthUser";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Loader, MapPin, Anchor, Shuffle, Camera } from "lucide-react";
@@ -41,13 +41,18 @@ const OnboardingPage = () => {
 
   const handleRandomAvatar = () => {
     const idx = Math.floor(Math.random() * 100) + 1; // 1-100 included
-    const randomAvatar = `https://avatar.iran.liara.run/public/${idx}.png`;
+    const randomAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${idx}`;
 
     setFormState({ ...formState, profilePic: randomAvatar });
     toast.success("Random profile picture generated!");
   };
 
   
+  useEffect(() => {
+      handleRandomAvatar()
+  }, [])
+
+
   return (
     <div className="playfair-font min-h-screen bg-black flex items-center justify-center p-4 relative overflow-hidden">
 
@@ -73,13 +78,13 @@ const OnboardingPage = () => {
             <div className="flex flex-col items-center justify-center space-y-6">
               {/* IMAGE PREVIEW */}
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 rounded-full blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-yellow-600 to-orange-600 overflow-hidden ring-4 ring-yellow-500/30 transition-all duration-300 group-hover:ring-yellow-700/50 group-hover:scale-105">
+                {/*<div className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 rounded-full blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>*/}
+                <div className="relative w-24 h-24 rounded-full  overflow-hidden ring-4 ring-yellow-500/30 transition-all duration-300 group-hover:ring-yellow-700/50 group-hover:scale-105">
                   {formState.profilePic ? (
                     <img
                       src={formState.profilePic}
                       alt="Profile Preview"
-                      className="w-full h-full object-cover"
+                      className=" h-full w-32 object-cover text-white"
                     />
                   ) : (
                     <div className="flex items-center justify-center h-full">
