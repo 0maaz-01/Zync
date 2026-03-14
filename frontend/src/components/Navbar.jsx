@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* LOGO - ONLY IN THE CHAT PAGE */}
           {isChatPage && (
               <div className="p-4 pl-0">
-                <Link to="/" className="flex items-center gap-2.5 group">
+                <Link to="/home" className="flex items-center gap-2.5 group">
                   <Navigation className="w-10 h-10 text-amber-600 tracking-wider animate-pulse" />
                   <span className="text-4xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-500 tracking-wider animate-pulse">
                       Zync
@@ -31,7 +31,7 @@ const Navbar = () => {
 
           {(isNotificationPage || isHomePage) && (
               <div className="p-4 pl-0 lg:hidden">
-                <Link to="/" className="flex items-center gap-2.5 group">
+                <Link to="/home" className="flex items-center gap-2.5 group">
                   <Navigation className="w-10 h-10 text-amber-600 tracking-wider animate-pulse" />
                   <span className="text-4xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-500 tracking-wider animate-pulse">
                       Zync
