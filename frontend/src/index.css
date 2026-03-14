@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+}
+
 .str-chat__channel {
   display: flex;
   align-items: center;
@@ -71,3 +80,56 @@
 .str-chat__list::-webkit-scrollbar-thumb:hover {
   background-color: #666;
 }
+
+
+.grad-text {            
+  background: linear-gradient(135deg, #ffaa00 50%,#ff5900 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+}
+
+
+.preview-float { animation: floatY 7s ease-in-out infinite; }
+.feat-card {
+  background: rgba(255,255,255,0.022);
+  border: 1px solid rgba(255, 255, 255, 0.215);
+  border-radius: 20px;
+  padding: 28px;
+  transition: transform .3s ease, border-color .3s ease, background .3s ease;
+  cursor: default;
+}
+
+
+.feat-card:hover { transform: translateY(-5px); background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.13); }
+.stack-card {
+  background: rgba(255,255,255,0.022);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 22px 14px 18px;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  transition: transform .25s ease, border-color .25s ease;
+  cursor: default; text-align: center;
+}
+.stack-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.14); }
+.btn-primary { 
+  background: linear-gradient(135deg,#ffaa00,#cd4800);
+  border: none; color: #fff; cursor: pointer;
+  transition: transform .2s, box-shadow .2s, filter .2s;
+  letter-spacing: -0.01em;
+}
+.btn-primary:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0px 0px 5px 5px rgba(255, 196, 0, 0.28); filter: brightness(1.1); }
+.btn-ghost {
+  background: rgb(45, 45, 45);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.btn-ghost:hover {  background: rgb(60, 60, 60);   }
+.nav-link { text-decoration: none; transition: color .2s; }
+.nav-link:hover { color: rgb(255, 213, 0); }
+.tab-btn { cursor:pointer; border:none; font-family: Bricolage Grotesque,sans-serif; font-weight:600; transition:all .2s; }
+.step-card { background: rgb(28, 28, 28); border: 1px solid rgb(53, 53, 53); border-radius: 20px; padding: 32px 28px; }

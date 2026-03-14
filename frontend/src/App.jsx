@@ -13,6 +13,7 @@ import { Toaster } from "react-hot-toast";
 import PageLoader from "./components/PageLoader.jsx";
 import useAuthUser from "./hooks/useAuthUser.js";
 import Layout from "./components/Layout.jsx";
+import LandingPage from "./pages/LandingPage.jsx";
 
 
 
@@ -28,10 +29,10 @@ const App = () => {
     <div className="h-screen" >
       <Routes>
 
-        <Route  path="/loading" element={<PageLoader/>}/>
+        <Route  path="/" element={<LandingPage/>}/>
 
         <Route
-          path="/"
+          path="/home"
           element={
             isAuthenticated && isOnboarded ? (
               <Layout showSidebar={true}>
@@ -45,13 +46,13 @@ const App = () => {
         <Route
           path="/signup"
           element={
-            !isAuthenticated ? <SignUpPage /> : <Navigate to={isOnboarded ? "/" : "/onboarding"} />
+            !isAuthenticated ? <SignUpPage /> : <Navigate to={isOnboarded ? "/home" : "/onboarding"} />
           }
         />
         <Route
           path="/login"
           element={
-            !isAuthenticated ? <LoginPage /> : <Navigate to={isOnboarded ? "/" : "/onboarding"} />
+            !isAuthenticated ? <LoginPage /> : <Navigate to={isOnboarded ? "/home" : "/onboarding"} />
           }
         />
         <Route
@@ -97,7 +98,7 @@ const App = () => {
               !isOnboarded ? (
                 <OnboardingPage />
               ) : (
-                <Navigate to="/" />
+                <Navigate to="/home" />
               )
             ) : (
               <Navigate to="/login" />
