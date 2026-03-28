@@ -50,7 +50,7 @@ body {
 
 .str-chat__message-input {
   background-color:  #2a2929;
-  color: white;
+  color: white !important;
 }
 
 .str-chat__message-input textarea {
@@ -81,6 +81,14 @@ body {
   background-color: #666;
 }
 
+.str-chat__attachment-preview-file-name {
+  color: white !important;
+}
+
+.str-chat__attachment-preview-file {
+  background-color: #2d2084 !important;
+  border: 0px !important;
+}
 
 .grad-text {            
   background: linear-gradient(135deg, #ffaa00 50%,#ff5900 50%);
